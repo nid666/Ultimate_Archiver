@@ -1,0 +1,17 @@
+{
+  "name": "genshi-app-project",
+  "description": "My First Electron App with Genshi Framework",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "version": "1.0.0",
+  "repository": null,
+  "keywords": [],
+  "author": "none",
+  "dependencies": {
+    "electron": "^4.1.4",
+    "genshi-lib": "^0.4.52",
+    "xml-js": "^1.6.11"
+  }
+}

@@ -1,0 +1,61 @@
+<application encode="utf-8">
+  <!--BASIC INFORMATION && CONFIGURATION OF APP UI -->
+  <meta:name value="Ultimate Archiver"/>
+  <meta:version value="1.0.0"/>
+  <meta:cookies value="./cookies/"/>
+  <meta:debugger value="true"/>
+  <meta:window-frame value="default"/>
+  <meta:index value="home"/> <!-- main page (folder name) to load at app open-->
+
+  <app:splash-screen>
+    <prop:background type="solid" color="#36393E"/>
+    <!-- <prop:background type="gradient" angle="0" from="#6400EE" to="#337bff"/> -->
+    <!-- <prop:background type="image" file="./assets/warwick.jpg"/> -->
+    <prop:logo file="./assets/build/app-icon.png" />
+    <prop:duration value="2000" /> <!-- time in milliseconds -->
+    <prop:out-animation value="zoomOut"/>
+  </app:splash-screen>
+
+  <app:menu> <!--disable by 'none' in type prop !-->
+    <prop:type value="sidebar-min"/>
+    <prop:attached value="false"/>
+
+    <!-- The elements order in app.xml will be the order in app's menu -->
+    <item type="page" name="home" label="Home Page" icon="home"/>
+    <item type="section" title="Menu Section"/>
+    <item type="page" name="Instagram" label="Instagram Archive" icon="camera_alt"/>
+	<item type="page" name="Website" label="Website Archive" icon="public"/>
+	<item type="page" name="Youtube" label="Youtube Archive" icon="fast_forward"/>
+  </app:menu>
+
+
+  <app:toolbar>
+  </app:toolbar>
+
+
+  <app:theme>
+    <prop:style value="dark"/>
+    <prop:main-color value="#6400EE"/> <!--Used for links, buttons, etc ... (blue by defaul) -->
+    <prop:secondary-color value="#e22434"/> <!--(OPTIONAL) to set a little variation in UI theme -->
+  </app:theme>
+
+
+  <app:preferences>
+    <prop:menu value="true" />
+  </app:preferences>
+
+
+  <app:data>
+    <!-- Usable in JavaScript by app.xml['data'] calling. Returns a JSON Object -->
+    <prop:my-custom-data-element my-custom-value="value"/>
+  </app:data>
+
+
+  <platform:linux>
+    <!--all content inside will overwrite all app.xml configuration -->
+    <!--ONLY if app runs under the specified platform -->
+    <!--For example: Only in Linux title will changes to ... -->
+    <meta:name value="Ultimate Archiver" />
+  </platform:linux>
+
+</application>
