@@ -1,6 +1,6 @@
 {
   "name": "genshi-app-project",
-  "description": "My First Electron App with Genshi Framework",
+  "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
