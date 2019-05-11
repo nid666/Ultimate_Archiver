@@ -1,0 +1,66 @@
+<!--INSERT HERE ALL PAGE CONTENT -->
+<script src="page.js" type="text/javascript"></script>
+<link  rel="stylesheet" href="style.css"/>
+
+<style media="screen">
+  #page-content {
+    width: 90%;
+    display: block;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+</style>
+
+<div id="page-content">
+  <h1><b>Ultimate Archiver Tool</b></h1>
+  <br/> This is an easy tool for archival and backup of instagram, youtube, and websites without having to memorize commands or use the command line.
+
+  <lb></lb>
+
+  <h2>Button (HTML Object)</h2>
+  <button>Basic Button</button> <button class="outline">outline Class</button> <button class="text">text Class</button>
+  <br/><button class="alt">alt Class</button> <button class="alt outline">alt + outline Class</button> <button class="alt text">alt + text Class</button>
+  <br/><button class="link">link Class</button>
+  <br/><br/><code>&lt;button class=""&gt;Example&lt;/button&gt;</code>
+
+  <lb></lb>
+
+  <h2>Checkbox (HTML Object)</h2>
+  <checkbox name="checkbox-1" checked="true"><label>Checkbox</label></checkbox>
+  <checkbox name="checkbox-2" checked="true" disabled><label>Disabled Checkbox</label></checkbox>
+  <checkbox name="checkbox-3" disabled><label>Disabled Checkbox (non-checked)</label></checkbox>
+  <checkbox name="checkbox-big" class="big" checked="true"><label>Checkbox with 'big' class.</label></checkbox>
+  <checkbox name="checkbox-small" class="small" checked="true"><label>Checkbox with 'small' class.</label></checkbox>
+  <br/><code>&lt;checkbox name="mi-checkbox-identifier"&gt;&lt;label&gt;Mi Checkbox&lt;/label&gt;&lt;/checkbox&gt;</code>
+  <br/><br/>Access to all checkboxes value of current page by " <i>page.getCheckbox(' checkbox-name ')</i> " : <button onclick="showCheckboxValues()">Example</button>
+
+  <lb></lb>
+
+  <h2>Toggle (HTML Object)</h2>
+  <toggle name="toggle-1" onchange="console.log()" activated="true"><label>Default Toggle have 100% width</label></toggle>
+  <toggle name="toggle-2" class="alt" activated="true"><label>Add 'alt' class to use Secondary Color</label></toggle>
+  <toggle name="toggle-3"disabled><label>Disabled Toggle</label></toggle>
+  <toggle name="toggle-4" style="width:210px;"><label>Toggle : 210px width</label></toggle>
+  <br/><code>&lt;toggle name="mi-toggle-identifier"&gt;&lt;label&gt;Toggle Example&lt;/label&gt;&lt;/toggle&gt;</code>
+  <br/><br/>Check if toggle is active by " <i>page.getToggle( 'toggle-name' ) </i> " : <button onclick="showToggleValues()">Example</button>
+
+  <lb></lb>
+
+  <h2>ContextMenu (JavaScript Class)</h2>
+  Show a native context-menu, See <a href="http://genshi.io/docs/">docs</a> for more details. <br/>
+  <button onclick="async_contextMenuExample()">Wait for Response Example</button>
+  <button onclick="contextMenuExample()">No wait for Response Example</button>
+
+  <lb></lb>
+
+  <h2>DialogBox (JavaScript Class)</h2>
+  Show native dialog box, See <a href="http://genshi.io/docs/">docs</a> for more details. <br/>
+  <button onclick="dialogBoxExample()">No wait for Response Example</button> <br/>
+  <button onclick="async_dialogBoxExample()">Wait for Response Example</button> <br/>
+  <button onclick="dialogInputBoxExample()">Wait for Input Example</button> <br/>
+  <button class="alt" onclick="alert('This is an Alert')">alert() has been replace with DialogBox</button>
+
+  <lb></lb>
+
+</div>

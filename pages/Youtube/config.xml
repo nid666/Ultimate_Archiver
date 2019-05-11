@@ -1,0 +1,31 @@
+<page>
+  <meta:title value=""/>
+  <!--Visit https://material.io/tools/icons to Get available Icons and their names -->
+
+  <page:header>
+  
+    <prop:style value="frame-fusion"/>
+    <prop:expand value="false"/>
+    <prop:background-image value=""/>
+    <!-- Extra buttons in header (right corner)-->
+    <!-- See docs to get more info about extra buttons in header -->
+	<item action="" icon="get_app"/>
+  </page:header>
+
+  <page:bubble> <!--remove element to disable -->
+    <prop:icon value="add"/>
+    <prop:action value="my_function"/> <!-- Action will ignored if you set items for a kind of menu. -->
+
+    <item icon="library_books" label="Documentation" action="openDocumentation" />
+  </page:bubble>
+
+  <page:data>
+    <prop:my-custom-prop value="my-custom-value"/>
+    <!-- access it by `page.data` -->
+  </page:data>
+
+  <platform:linux>
+    <!--also here you can set platform variations -->
+  </platform:linux>
+
+</page>

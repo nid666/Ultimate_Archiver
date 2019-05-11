@@ -1,6 +1,8 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron');
 const { appXML } = require('genshi-lib'); let xml;
+const fs = require('fs');
+const ytdl = require('ytdl-core')
 appXML().then( res => { xml = res;
   setTimeout(() => { createWindow(); }, 300);
 }); let mainWindow;
@@ -9,7 +11,6 @@ function createWindow () {
   // Get some options from xml.
   var frame = xml['window-frame'] || 'default';
   if(frame == 'default') frame = false; else frame = true;
-
   // Create the browser window.
   // For more Browser's Properties visit
   // https://github.com/electron/electron/blob/master/docs/api/browser-window.md
@@ -54,3 +55,4 @@ app.on('activate', function () {
     createWindow()
   }
 });
+
