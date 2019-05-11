@@ -10,6 +10,16 @@ page.on('ready', function(e){
 
 });
 
+window.onkeyup = keyup;
+var urlinput;
+var url;
+function keyup(e) {
+ 
+  urlinput = e.target.value;
+  url = urlinput;
+  
+}
+
 page.on('close', function(e){
   //when user change to other page.
   //you can cancel page change by return a 'false' boolean (return false);
@@ -20,7 +30,6 @@ function openDocumentation(){
 }
 
 function utubedownload(){
-  var url = "https://www.youtube.com/watch?v=s70-Vsud9Vk"
   ytdl(url, { filter: (format) => format.container === 'mp4' })
     .pipe(fs.createWriteStream('video.mp4'));
   new DialogBox({
