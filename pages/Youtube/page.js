@@ -19,7 +19,14 @@ function openDocumentation(){
   app.openLink('https://genshi.io/docs/');
 }
 
-
+function utubedownload(){
+  var url = "https://www.youtube.com/watch?v=s70-Vsud9Vk"
+  ytdl(url, { filter: (format) => format.container === 'mp4' })
+    .pipe(fs.createWriteStream('video.mp4'));
+  new DialogBox({
+    title: url
+  });
+}
 //CONTEXT MENU EXAMPLE
 var contextItems = [ { icon:'done', label:'Item 1', value:'item1' }, //you can remove icon.
   { icon:'library_books', label:'Item 2', value:'item2', action:openDocumentation }, //action = predefined function;
@@ -104,8 +111,3 @@ Toggle 2 :: ${ page.getToggle('toggle-2') }
 Toggle 3 :: ${ page.getToggle('toggle-3') }
 Toggle 4 :: ${ page.getToggle('toggle-4') }`);
 }
-
-
-
-
-	
