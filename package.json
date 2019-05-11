@@ -12,6 +12,7 @@
   "dependencies": {
     "electron": "^4.1.4",
     "genshi-lib": "^0.4.52",
+    "python-shell": "^1.0.7",
     "xml-js": "^1.6.11",
     "ytdl-core": "^0.29.1"
   }
